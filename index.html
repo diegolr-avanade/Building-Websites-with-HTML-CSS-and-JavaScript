@@ -3,21 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style></style>
+    <style>
+        .desktop,
+        .print {
+            display: none;
+        }
+        
+        @media print {
+            .mobile,
+            .desktop{
+                display: none;
+            }
+
+            .print{
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 768px) {
+            .mobile {
+                display:none
+            }
+            .desktop{
+                display:block
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Introduction to CSS</h1>
-<p>This tutorial will show you how to use CSS</p>
-<div class="tutorial" id="tutorial1">
-    <h2>Tutorial 1</h2>
-    <img src="https://placehold.co/150" />
-    <p>This is tutorial 1</p>
-</div>
-<div class="tutorial" id="tutorial2">
-    <h2>Tutorial 2</h2>
-    <img src="https://placehold.co/100" />
-    <p>This is tutorial 2</p>
-</div>        
+    <div class="desktop">Desktop</div>
+    <div class="mobile">Mobile</div>
+    <div class="print">Print</div>
 </body>
 </html>
