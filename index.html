@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        .desktop,
-        .print {
-            display: none;
-        }
-        
-        @media print {
-            .mobile,
-            .desktop{
-                display: none;
-            }
-
-            .print{
-                display: block;
-            }
-        }
-
-        @media screen and (min-width: 768px) {
-            .mobile {
-                display:none
-            }
-            .desktop{
-                display:block
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="site.css" type="text/css">
+    <title>Bethany's Pie Shop</title>
 </head>
+<style>
+    h1 {
+        font-size: 3em;
+        margin-top: 0.5em;
+    }
+
+    .banner {
+        max-width: 100%;
+    }
+
+    .sub-title{
+        background-color: #fff;
+        font-size: 1.5em;
+        padding: 10px;
+    }
+</style>
 <body>
-    <div class="desktop">Desktop</div>
-    <div class="mobile">Mobile</div>
-    <div class="print">Print</div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="pies.html">Pies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside><img src="images/logo.png" alt="Bethany's Pie Shop"></aside>
+        <article>
+            <img src="images/banner.png" alt="Banner" class="banner" />
+            <h1>Welcome to Bethany's Pie Shop</h1>
+            <p class="sub-title">With a pie for every palate and occasion, Bethany's Pie Shop continues to spread joy
+                one slice at a time. The shop's selection includes a variety of <a href="pies.html">delicious pies</a>.
+                Take a look!
+            </p>
+        </article>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="pies.html">Pies</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
+
 </html>
